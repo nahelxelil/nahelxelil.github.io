@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پەرتووکا «ژ هەستێن من» - نهێل خەلیل</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #e89a3e;
+            --secondary-color: #c1610e;
+            --dark-color: #2c1d10;
+            --light-color: #fff8f0;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Noto Kufi Arabic', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 2rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            /* === لێرە گوهۆرین هاتیە کرن === */
+            /* https://imgur.com/a/oBVe0Ti */
+            background-image: linear-gradient(rgba(44, 29, 16, 0.7), rgba(44, 29, 16, 0.7)), url('لێرە لینکێ راستەرەست یێ وێنەی دانە');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .hero .author-name {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            font-weight: 400;
+            color: var(--primary-color);
+        }
+
+        .hero .quote {
+            font-size: 1.3rem;
+            max-width: 600px;
+            margin-bottom: 2.5rem;
+            font-style: italic;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background: var(--secondary-color);
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 0;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--dark-color);
+            position: relative;
+        }
+        
+        section h2::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--primary-color);
+            margin: 0.5rem auto 0;
+        }
+
+        .about-content {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .about-content img {
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .about-text p {
+            margin-bottom: 1rem;
+        }
+
+        .highlight {
+            background-color: #fdf5e8;
+            padding: 3rem 0;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .feature-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .feature-item h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        /* Sample Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Call to Action Section */
+        .cta-section {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        /* Footer */
+        footer {
+            background: #22180e;
+            color: #aaa;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            .hero .author-name {
+                font-size: 1.2rem;
+            }
+            .hero .quote {
+                font-size: 1rem;
+            }
+            .about-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            section h2 {
+                font-size: 2rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- ١. بەشێ سەری -->
+    <header class="hero">
+        <!-- === لێرە گوهۆرین هاتیە کرن === -->
+        <!-- https://imgur.com/a/oBVe0Ti -->
+        <h1>ژ هەستێن من</h1>
+        <p class="author-name">بەرهەمێ نڤیسەر: نهێل خەلیل</p>
+        <p class="quote">"هەر رۆژەک پەڕەکێ سپی یە ژ ژیانا تە، بزاڤێ بکە تشتەکێ جوان تێدا بنڤیسی."</p>
+        <a href="https://drive.google.com/file/d/1y3-ZeiUI7lXX4z9fCIvtwrQdJs313N5c/view?usp=sharing" target="_blank" class="btn">پەرتووکێ ب شێوێ PDF ببینە</a>
+    </header>
+
+    <main>
+        <!-- ٢. دەربارەی پەرتووکێ -->
+        <section id="about-book" class="container">
+            <h2>دەربارەی پەرتووکێ</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        پەرتووکا <strong>«ژ هەستێن من»</strong> بەرهەمەکێ نوو و جودایە ژ پێنൂسا نڤیسەرێ گەنج <strong>نهێل خەلیل</strong>. ئەڤ پەرتووکە کومەکا پەیڤ و گۆتنێن نەستەق (حیکمەت) ب سێ زمانان ل خۆ دگریت، کو هەست و هزرێن مرۆڤایەتیێ ب شێوازەکێ هۆنەری و سەرنجراکێش دئینیتە بەرچاڤ.
+                    </p>
+                    <p>
+                        پەرتووک گەشتەکە د ناڤ جیهانا هەستێن مرۆڤی دا، کو خواندەڤانی هانددەت بۆ هزرکرن ل گرنگیا ژیان، ئەڤینی، راستگۆیی و هیڤیێ. ئەو پەیامەکا گەشبینیێ یە بۆ چێکرنا رۆژەکا جوانتر.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ٣. تایبەتمەندیێن سەرەکی -->
+        <section class="highlight">
+            <div class="container">
+                <h2>خاڵێن سەرنجراکێش</h2>
+                <div class="features">
+                    <div class="feature-item">
+                        <h3>سێ زمان</h3>
+                        <p>ناڤەرۆک ب سێ زمانێن جیهانی هاتیە پێشکێشکرن: کوردی (بادینی)، ئنگلیزی و عەرەبی. ئەڤە پرەکە دناڤبەرا کەلتوران دا.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>پەیڤێن نەستەق</h3>
+                        <p>کومەکا گۆتنێن کورت و پر ڕامانە کو لسەر ژیان، ئەڤینی و هیڤیێ دئاخڤن و هاندەرن بۆ هزرکرنێ.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>دیزاینا هۆنەری</h3>
+                        <p>نڤیسەر ب خۆ دیزاینەرێ پەرتووکێ یە، لەوا هەست و پەیڤ دگەل دیزاینێ ب شێوەیەکێ هەڤگرتی هاتینە ئێک.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ٤. دەربارەی نڤیسەری -->
+        <section id="about-author" class="container">
+            <h2>دەربارەی نڤیسەری: نهێل خەلیل</h2>
+            <div class="about-content">
+                 <img src="https://i.imgur.com/K3yZ6uF.png" alt="نهێل خەلیل" style="max-width: 250px; border-radius: 50%; border: 5px solid var(--primary-color);">
+                <div class="about-text">
+                    <p>
+                        <strong>نهێل خەلیل</strong>، نڤیسەر و دیزاینەرەکێ گەنجە ژ باژێرێ دهۆکێ. ئەو ب هەستەکا بلند و حەزەکا مەزن بۆ پەیڤێ، هەولددەت وان هەستێن ناخێ خۆ د چارچوڤێ بەرهەمەکێ هۆنەری دا پێشکێشی خواندەڤانان بکەت.
+                    </p>
+                    <p>
+                        وەک ئەو ب خۆ دبێژیت، وی نەشیایە "ئەو هەستان د ناخێ خۆ دا بهێلیت"، لەوا ب رێکا ڤێ پەرتووکێ، وی ئەو هەست و بیرکرنە دگەل جیهانێ پشکڤەکرینە.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    
+            </div>
+        </section>
+
+        <!-- ٦. چاوا پەرتووکێ ب دەستخۆڤە بینی؟ -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>پەرتووکێ ب دەستخۆڤە بینە</h2>
+                <p>
+                    پەرتووکا «ژ هەستێن من» ب تیراژا ٥٠٠ دانە ل چاپخانا پەروەر ل دهۆکێ هاتیە چاپکرن.<br>
+                    نوکە ل هەمی پەرتووکخانەیێن ناڤدار یێن باژێرێ دهۆکێ بەردەستە.
+                </p>
+                <a href="#" class="btn">بۆ پتر پێزانینان پەیوەندیێ بکە</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ٧. پێیێ مالپەری -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 | هەمی ماف بۆ نهێل خەلیل پاراستینە.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
